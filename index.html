@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f5f2eb" name="theme-color"/>
+<title>VARNIYAM — One Woman. Many Moods.</title>
+<meta content="Discover VARNIYAM, founded by Ramya Saravanan in Palani, Tamil Nadu. Indian elegance, contemporary expression, and a wardrobe for every version of her." name="description"/>
+<meta content="VARNIYAM — One Woman. Many Moods." property="og:title"/>
+<meta content="Indian elegance. Contemporary expression. Discover the world of VARNIYAM." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/>
+<noscript></noscript>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div aria-label="Welcome to VARNIYAM" aria-modal="true" class="entry-gate" id="entry-gate" role="dialog">
+<div class="entry-shell">
+<section aria-label="VARNIYAM brand" class="entry-brand-panel">
+<div class="entry-brand-inner">
+<img alt="VARNIYAM emblem" class="entry-brand-logo" id="entry-brand-logo"/>
+<div class="entry-brand-name">VARNIYAM</div>
+<div class="entry-brand-tagline">Style lives within you</div>
+<span aria-hidden="true" class="entry-brand-line"></span>
+</div>
+<div class="entry-brand-bottom">Fashion   ·   Women   ·   Life   ·   Many moods</div>
+</section>
+<section class="entry-welcome-panel">
+<button aria-label="Close account panel" class="entry-close" hidden="" id="entry-close" type="button">×</button>
+<div aria-hidden="true" class="entry-editorial">
+<figure class="entry-photo one"><img alt="" src="assets/images/login/login-saree-lotus.webp"/></figure>
+<figure class="entry-photo two"><img alt="" src="assets/images/login/login-white-saree.webp"/></figure>
+<figure class="entry-photo three"><img alt="" src="assets/images/login/login-city-scarf.webp"/></figure>
+<div class="entry-editorial-copy">Grace<br/>in every<br/>chapter</div>
+</div>
+<div class="entry-content">
+<div class="entry-view" id="entry-home-view">
+<span class="entry-kicker">More than fashion · a fuller you</span>
+<h1><span>Welcome to</span>VARNIYAM</h1>
+<span aria-hidden="true" class="entry-rule"></span>
+<p class="entry-subtitle">One woman. Many moods.</p>
+<div class="entry-actions">
+<button class="entry-action primary" data-entry-view="signin" type="button">Sign In <span aria-hidden="true">→</span></button>
+<button class="entry-action" data-entry-view="signup" type="button">Create Account <span aria-hidden="true">→</span></button>
+<button class="entry-action" id="entry-guest" type="button">Continue as Guest <span aria-hidden="true">→</span></button>
+</div>
+<div aria-label="VARNIYAM membership benefits" class="entry-perks">
+<div class="entry-perk"><strong>⌁</strong>Timeless<br/>designs</div>
+<div class="entry-perk"><strong>♡</strong>Modern<br/>women</div>
+<div class="entry-perk"><strong>✦</strong>Your own<br/>story</div>
+</div>
+</div>
+<form class="entry-view" hidden="" id="entry-signin-view" novalidate="">
+<button class="entry-link-button entry-back" data-entry-view="home" type="button">← Back</button>
+<h2 class="entry-form-heading">Welcome back.</h2>
+<p class="entry-form-copy">Sign in to your VARNIYAM account to share reviews and keep your member experience with you.</p>
+<div class="entry-field"><label for="entry-signin-email">Email</label><input autocomplete="email" id="entry-signin-email" placeholder="you@example.com" required="" type="email"/></div>
+<div class="entry-field"><label for="entry-signin-password">Password</label><input autocomplete="current-password" id="entry-signin-password" minlength="8" placeholder="Your password" required="" type="password"/></div>
+<button class="entry-action primary entry-submit" type="submit">Sign In <span aria-hidden="true">→</span></button>
+<div class="entry-form-row"><button class="entry-link-button" data-entry-view="reset" type="button">Forgot password?</button><button class="entry-link-button" data-entry-view="signup" type="button">Create an account</button></div>
+<p aria-live="polite" class="entry-auth-status" id="entry-signin-status" role="status"></p>
+</form>
+<form class="entry-view" hidden="" id="entry-signup-view" novalidate="">
+<button class="entry-link-button entry-back" data-entry-view="home" type="button">← Back</button>
+<h2 class="entry-form-heading">Become a member.</h2>
+<p class="entry-form-copy">Create your VARNIYAM account. We will send a verification email before your membership is fully activated.</p>
+<div class="entry-field"><label for="entry-signup-name">Your name</label><input autocomplete="name" id="entry-signup-name" maxlength="80" placeholder="Name" required="" type="text"/></div>
+<div class="entry-field"><label for="entry-signup-email">Email</label><input autocomplete="email" id="entry-signup-email" placeholder="you@example.com" required="" type="email"/></div>
+<div class="entry-field"><label for="entry-signup-password">Password</label><input autocomplete="new-password" id="entry-signup-password" minlength="8" placeholder="At least 8 characters" required="" type="password"/></div>
+<div class="entry-field"><label for="entry-signup-confirm">Confirm password</label><input autocomplete="new-password" id="entry-signup-confirm" minlength="8" placeholder="Repeat password" required="" type="password"/></div>
+<button class="entry-action primary entry-submit" type="submit">Create Account <span aria-hidden="true">→</span></button>
+<div class="entry-form-row"><span></span><button class="entry-link-button" data-entry-view="signin" type="button">Already a member? Sign in</button></div>
+<p aria-live="polite" class="entry-auth-status" id="entry-signup-status" role="status"></p>
+</form>
+<form class="entry-view" hidden="" id="entry-reset-view" novalidate="">
+<button class="entry-link-button entry-back" data-entry-view="signin" type="button">← Back to sign in</button>
+<h2 class="entry-form-heading">Reset password.</h2>
+<p class="entry-form-copy">Enter your account email and Supabase will send you a password-reset link.</p>
+<div class="entry-field"><label for="entry-reset-email">Email</label><input autocomplete="email" id="entry-reset-email" placeholder="you@example.com" required="" type="email"/></div>
+<button class="entry-action primary entry-submit" type="submit">Send reset link <span aria-hidden="true">→</span></button>
+<p aria-live="polite" class="entry-auth-status" id="entry-reset-status" role="status"></p>
+</form>
+<form class="entry-view" hidden="" id="entry-update-password-view" novalidate="">
+<h2 class="entry-form-heading">Choose a new password.</h2>
+<p class="entry-form-copy">Your reset link has been accepted. Set a new password for your VARNIYAM account.</p>
+<div class="entry-field"><label for="entry-new-password">New password</label><input autocomplete="new-password" id="entry-new-password" minlength="8" placeholder="At least 8 characters" required="" type="password"/></div>
+<button class="entry-action primary entry-submit" type="submit">Update password <span aria-hidden="true">→</span></button>
+<p aria-live="polite" class="entry-auth-status" id="entry-update-status" role="status"></p>
+</form>
+<div class="entry-view" hidden="" id="entry-account-view">
+<button class="entry-link-button entry-back" id="entry-account-back" type="button">← Enter website</button>
+<h2 class="entry-form-heading">My account.</h2>
+<p class="entry-form-copy">Your VARNIYAM membership is active on this device.</p>
+<div class="entry-account-card">
+<div class="entry-account-avatar" id="entry-account-avatar">V</div>
+<div class="entry-account-name" id="entry-account-name">VARNIYAM member</div>
+<div class="entry-account-email" id="entry-account-email"></div>
+<div class="entry-account-actions">
+<button class="entry-action primary" id="entry-account-enter" type="button">Enter VARNIYAM <span aria-hidden="true">→</span></button>
+<button class="entry-action" id="entry-logout" type="button">Log out</button>
+</div>
+</div>
+<p aria-live="polite" class="entry-auth-status" id="entry-account-status" role="status"></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="header-inner wrap">
+<a aria-label="VARNIYAM home" class="logo header-brand" href="#home">
+<img alt="" aria-hidden="true" class="header-brand-mark" src="assets/icons/varniyam-logo-mark.webp"/>
+<img alt="VARNIYAM" class="header-brand-wordmark" src="assets/icons/varniyam-wordmark.webp"/>
+</a>
+<button aria-controls="navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" type="button"><span></span><span></span></button>
+<nav aria-label="Main navigation" class="nav" id="navigation">
+<a aria-current="location" href="#home">Home</a><a href="#wardrobe">Wardrobe</a><a href="#story">Our Story</a><a href="#philosophy">Philosophy</a><a href="#customization">Customization</a><a href="#contact">Contact</a><div class="nav-member" id="nav-member"><span class="nav-member-greeting" hidden="" id="nav-member-greeting"></span><button class="nav-account-button" id="account-button" type="button">Account</button><button class="nav-logout-button" hidden="" id="nav-logout-button" type="button">Log out</button></div>
+</nav>
+</div>
+</header>
+<div class="member-welcome-bar" hidden="" id="member-welcome-bar">
+<div class="member-welcome-inner wrap">Welcome back, <strong id="member-welcome-name">VARNIYAM member</strong><span aria-hidden="true">•</span><span>Your account is signed in.</span></div>
+</div>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero" id="home">
+<video aria-hidden="true" class="hero-gaze-video" muted="" playsinline="" poster="assets/images/hero/hero-gaze-poster.jpg" preload="auto" tabindex="-1">
+<source src="assets/video/hero-gaze.mp4" type="video/mp4"/>
+</video>
+<div class="hero-copy">
+<span class="eyebrow">Rooted in India. Expressed by you.</span>
+<h1 id="hero-title">VARNIYAM</h1>
+<div class="hero-line">One woman.<br/><em>Many moods.</em></div>
+<p>Indian elegance. Contemporary expression.</p>
+<a class="button solid" href="#wardrobe">Explore the wardrobe <span aria-hidden="true">↗</span></a>
+<a class="scroll-hint" href="#statement">Discover her world</a>
+</div>
+<p class="hero-gaze-caption">A STUDY IN EXPRESSION</p>
+</section>
+<div aria-label="VARNIYAM brand highlights" class="brand-strip">
+<div class="brand-marquee">
+<div class="brand-track">
+<div class="brand-group">
+<span>Indian soul · Contemporary form</span>
+<span>For every version of her</span>
+<span>Palani, India · Est. 2026</span>
+<span>One woman · Many moods</span>
+</div>
+<div aria-hidden="true" class="brand-group">
+<span>Indian soul · Contemporary form</span>
+<span>For every version of her</span>
+<span>Palani, India · Est. 2026</span>
+<span>One woman · Many moods</span>
+</div>
+</div>
+</div>
+</div>
+<section aria-labelledby="statement-title" class="statement section wrap" id="statement">
+<figure class="reveal statement-new-portrait"><div class="photo"><img alt="VARNIYAM editorial portrait" loading="lazy" src="assets/images/other/editorial-portrait.webp"/></div><figcaption class="caption">01 / The freedom to be yourself.</figcaption></figure>
+<div class="reveal"><span class="eyebrow">The VARNIYAM spirit</span><h2 id="statement-title">One woman.<br/><em>Many moods.</em></h2><p>VARNIYAM celebrates every version of her. Traditional when she wants to be, effortless when she needs to be, romantic when she feels it, and bold whenever she chooses.</p><a class="text-link" href="#reviews">Share your VARNIYAM story <span aria-hidden="true">↗</span></a></div>
+</section>
+<section aria-label="VARNIYAM wardrobe" class="wardrobe section" id="wardrobe">
+<div class="wardrobe-stage wrap" data-wardrobe-stage="">
+<div aria-label="VARNIYAM wardrobe categories" class="wardrobe-capsules">
+<article class="wardrobe-capsule" data-wardrobe-item="" id="indian" style="--wardrobe-index:0">
+<a aria-label="Explore Indian Elegance" class="wardrobe-image-pill" href="indian-elegance.html">
+<img alt="A model in an orange embroidered Indian outfit with traditional detailing" loading="lazy" src="assets/images/wardrobe/wardrobe-indian-elegance.webp"/>
+<span class="wardrobe-number">01</span>
+</a>
+<div class="wardrobe-capsule-copy">
+<h3>Indian Elegance</h3>
+<p>A connection to tradition, with room for your own expression.</p>
+<p class="categories">Half Sarees · Lehengas · Anarkalis · Traditional Gowns</p>
+<a class="wardrobe-mini-link" href="indian-elegance.html">Explore <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="wardrobe-capsule" data-wardrobe-item="" id="gowns" style="--wardrobe-index:1">
+<a aria-label="Explore Modern Gowns" class="wardrobe-image-pill" href="modern-gowns.html">
+<img alt="A long gown with an elegant contemporary silhouette" loading="lazy" src="https://images.pexels.com/photos/33365174/pexels-photo-33365174.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000"/>
+<span class="wardrobe-number">02</span>
+</a>
+<div class="wardrobe-capsule-copy">
+<h3>Modern Gowns</h3>
+<p>Quiet confidence. A silhouette that speaks for itself.</p>
+<p class="categories">Contemporary Gowns · Sleeveless Gowns · Statement Silhouettes</p>
+<a class="wardrobe-mini-link" href="modern-gowns.html">Explore <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="wardrobe-capsule" data-wardrobe-item="" id="everyday" style="--wardrobe-index:2">
+<a aria-label="Explore Everyday Feminine" class="wardrobe-image-pill" href="everyday-feminine.html">
+<img alt="A model in a relaxed everyday feminine outfit with printed layers and wide-leg pants" loading="lazy" src="assets/images/wardrobe/wardrobe-everyday-feminine.webp"/>
+<span class="wardrobe-number">03</span>
+</a>
+<div class="wardrobe-capsule-copy">
+<h3>Everyday Feminine</h3>
+<p>A little expression in the everyday.</p>
+<p class="categories">Short Tops · Peplums · Mini Dresses · Casual Outfits</p>
+<a class="wardrobe-mini-link" href="everyday-feminine.html">Explore <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="wardrobe-capsule" data-wardrobe-item="" id="getaway" style="--wardrobe-index:3">
+<a aria-label="Explore Getaway" class="wardrobe-image-pill" href="getaway.html">
+<img alt="A woman at the beach during sunset in a breezy getaway look" loading="lazy" src="assets/images/wardrobe/wardrobe-getaway.webp"/>
+<span class="wardrobe-number">04</span>
+</a>
+<div class="wardrobe-capsule-copy">
+<h3>Getaway</h3>
+<p>Unhurried days. An open horizon.</p>
+<p class="categories">Beachwear · Resort Wear · Vacation Looks</p>
+<a class="wardrobe-mini-link" href="getaway.html">Explore <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+<article class="wardrobe-capsule" data-wardrobe-item="" id="after-hours" style="--wardrobe-index:4">
+<a aria-label="Explore After Hours" class="wardrobe-image-pill" href="after-hours.html">
+<img alt="An expressive green evening dress with a flowing silhouette" loading="lazy" src="https://images.pexels.com/photos/7273705/pexels-photo-7273705.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000"/>
+<span class="wardrobe-number">05</span>
+</a>
+<div class="wardrobe-capsule-copy">
+<h3>After Hours</h3>
+<p>For evenings that feel like you.</p>
+<p class="categories">Date-Night Dresses · Romantic Silhouettes · Evening Looks</p>
+<a class="wardrobe-mini-link" href="after-hours.html">Explore <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+</div>
+<p class="note wardrobe-note">Editorial imagery illustrates our style direction. These images do not represent VARNIYAM products or confirmed availability.</p>
+</div>
+</section>
+
+
+<section aria-labelledby="latest-title" class="latest section"><div class="wrap">
+<div class="section-top reveal"><div><span class="eyebrow">A first glimpse</span><h2 id="latest-title">The latest<br/><em>from VARNIYAM.</em></h2></div><span class="pill">COMING SOON</span></div>
+<div class="latest-grid">
+<article class="reveal"><div class="photo"><img alt="Saree draping inspiration for the traditional mood" height="700" loading="lazy" src="https://images.pexels.com/photos/32597575/pexels-photo-32597575.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" width="500"/></div><h3>The traditional mood</h3><p>An editorial study in Indian elegance.</p><a class="text-link" href="#contact">Enquire <span aria-hidden="true">↗</span></a></article>
+<article class="reveal"><div class="photo"><img alt="Editorial modern mood featuring a woman in a sculptural wide-brim hat and refined neutral tailoring" height="700" loading="lazy" src="assets/images/other/latest-modern-mood.webp" style="object-position:center 28%" width="500"/></div><h3>The modern mood</h3><p>An editorial study in form.</p><a class="text-link" href="#contact">Enquire <span aria-hidden="true">↗</span></a></article>
+<article class="reveal"><div class="photo"><img alt="Neutral casual clothing as everyday style inspiration" height="700" loading="lazy" src="https://images.pexels.com/photos/30698041/pexels-photo-30698041.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" width="500"/></div><h3>The effortless mood</h3><p>An editorial study in ease.</p><a class="text-link" href="#contact">Enquire <span aria-hidden="true">↗</span></a></article>
+<article class="reveal"><div class="photo"><img alt="Getaway mood featuring a woman in denim shorts, a white layered beach look, sunglasses and a printed headscarf beneath vivid bougainvillea" height="700" loading="lazy" src="assets/images/other/latest-getaway-mood.webp" width="500"/></div><h3>The getaway mood</h3><p>An editorial study in movement.</p><a class="text-link" href="#contact">Enquire <span aria-hidden="true">↗</span></a></article>
+</div><p class="note">A moodboard of what inspires us. VARNIYAM collection reveals are coming soon.</p>
+</div></section>
+<section aria-labelledby="reviews-title" class="reviews section" id="reviews">
+<div class="wrap reviews-shell">
+<div class="reviews-intro reveal">
+<span class="eyebrow">The VARNIYAM community</span>
+<h2 id="reviews-title">Share your<br/><em>VARNIYAM story.</em></h2>
+<p>Tell us what you loved, how you styled it, or what the piece meant to you. Add your thoughts and, if you like, share up to 10 photos from your collection.</p>
+<div class="reviews-note" role="note">
+<span aria-hidden="true">✦</span>
+<p id="review-auth-note">Sign in to your VARNIYAM account to submit a review. Approved reviews and photos are saved online for the community.</p>
+</div>
+</div>
+<form class="review-form reveal" id="review-form" novalidate="">
+<div class="review-field">
+<label for="review-name">Your name</label>
+<input autocomplete="name" id="review-name" maxlength="60" name="name" placeholder="Name" required="" type="text"/>
+</div>
+<div class="review-field">
+<label for="review-message">Your review</label>
+<textarea id="review-message" maxlength="1600" name="message" placeholder="Write your thoughts about VARNIYAM…" required="" rows="6"></textarea>
+<div class="review-field-meta"><span id="review-message-count">0 / 1600</span></div>
+</div>
+<div class="review-upload">
+<div class="review-upload-top">
+<div>
+<span class="review-upload-label">Add your photos</span>
+<small>JPG, PNG or WEBP · up to 10 images per review · photos are optimized before upload</small>
+</div>
+<span class="review-photo-count" id="review-photo-count">0 / 10</span>
+</div>
+<input accept="image/jpeg,image/png,image/webp" hidden="" id="review-photos" multiple="" name="photos" type="file"/>
+<label class="review-upload-button" for="review-photos">
+<span aria-hidden="true">＋</span>
+          Choose photos
+        </label>
+<div aria-live="polite" class="review-preview-grid" id="review-preview-grid"></div>
+</div>
+<div class="review-form-footer">
+<p aria-live="polite" class="review-status" id="review-status" role="status"></p>
+<button class="button solid" type="submit">Submit review <span aria-hidden="true">↗</span></button>
+</div>
+</form>
+</div>
+<div class="wrap review-wall-wrap">
+<div class="review-wall-heading reveal">
+<div>
+<span class="eyebrow">From the community</span>
+<h3>Shared moments.</h3>
+</div>
+<p>Approved community reviews appear here for every visitor.</p>
+</div>
+<div aria-live="polite" class="review-wall" id="review-wall"></div>
+<div class="review-empty" id="review-empty">
+<span aria-hidden="true">✦</span>
+<p>No approved reviews yet. Be the first to share your VARNIYAM moment.</p>
+</div>
+<nav aria-label="Community review pages" class="review-pagination" hidden="" id="review-pagination">
+<button aria-label="Show newer reviews" class="review-page-button" id="review-prev" type="button">← Previous</button>
+<span aria-live="polite" class="review-page-indicator" id="review-page-indicator">Page 1</span>
+<button aria-label="Show older reviews" class="review-page-button" id="review-next" type="button">Next →</button>
+</nav>
+</div>
+</section>
+<section aria-labelledby="story-title" class="story section wrap" id="story"><div class="story-text reveal"><span class="eyebrow">Our story / Palani, Tamil Nadu</span><h2 id="story-title"><span class="story-title-line">A vision,</span><br/><em>made to be worn.</em></h2><div class="story-copy"><p>Founded by Ramya Saravanan in 2026, VARNIYAM was created around a simple belief: a woman should never have to choose between comfort, elegance, and self-expression.</p><p>Rooted in Indian soul and open to contemporary form, the brand is a space for all the moods that make her who she is.</p></div><div class="story-signoff"><div class="signature">Ramya Saravanan</div><small>Founder, VARNIYAM</small></div></div></section>
+<section aria-labelledby="approach-title" class="approach section wrap" id="philosophy"><div class="approach-title reveal"><span class="eyebrow">The way we see it</span><h2 id="approach-title">Our approach.</h2></div><div class="approach-cards"><article class="approach-card reveal" tabindex="0"><div class="approach-card-art art-1"><img alt="" aria-hidden="true" src="assets/images/approach/approach-ornament-frame.webp"/><div class="approach-card-content"><div aria-label="VARNIYAM" class="approach-card-brand"><img alt="" aria-hidden="true" class="approach-brand-mark"/><span class="approach-brand-word">VARNIYAM</span></div><span class="approach-number">01</span><h3>Femininity</h3><p>Defined by her, in all its different expressions.</p></div></div></article><article class="approach-card reveal" tabindex="0"><div class="approach-card-art art-2"><div class="approach-card-content"><div aria-label="VARNIYAM" class="approach-card-brand"><img alt="" aria-hidden="true" class="approach-brand-mark"/><span class="approach-brand-word">VARNIYAM</span></div><span class="approach-number">02</span><h3>Comfort</h3><p>The freedom to feel at ease and be yourself.</p></div></div></article><article class="approach-card reveal" tabindex="0"><div class="approach-card-art art-3"><div class="approach-card-content"><div aria-label="VARNIYAM" class="approach-card-brand"><img alt="" aria-hidden="true" class="approach-brand-mark"/><span class="approach-brand-word">VARNIYAM</span></div><span class="approach-number">03</span><h3>Versatility</h3><p>Space for changing moods and everyday moments.</p></div></div></article><article class="approach-card reveal" tabindex="0"><div class="approach-card-art art-4"><div class="approach-card-content"><div aria-label="VARNIYAM" class="approach-card-brand"><img alt="" aria-hidden="true" class="approach-brand-mark"/><span class="approach-brand-word">VARNIYAM</span></div><span class="approach-number">04</span><h3>Indian Soul</h3><p>A connection to the elegance of our roots.</p></div></div></article><article class="approach-card reveal" tabindex="0"><div class="approach-card-art art-5"><div class="approach-card-content"><div aria-label="VARNIYAM" class="approach-card-brand"><img alt="" aria-hidden="true" class="approach-brand-mark"/><span class="approach-brand-word">VARNIYAM</span></div><span class="approach-number">05</span><h3>Contemporary Form</h3><p>A fresh perspective on how that elegance is worn.</p></div></div></article></div></section>
+<section aria-labelledby="custom-title" class="custom section custom-made-for-you" id="customization"><div class="custom-made-inner wrap"><div class="custom-made-copy reveal"><span class="eyebrow">Your imagination. A conversation with us.</span><h2 id="custom-title">Made <em>for you.</em></h2><p>Every woman has her own vision. VARNIYAM explores personalised outfits shaped around your style, occasion, and imagination.</p><a class="button solid" href="https://wa.me/919363352518?text=Hello%20VARNIYAM%2C%20I%20would%20like%20to%20know%20more%20about%20custom%20outfits." rel="noopener noreferrer" target="_blank">Create your look → WhatsApp</a></div></div></section>
+<section aria-labelledby="moments-title" class="moments section wrap"><div class="section-top reveal"><div><span class="eyebrow">VARNIYAM moments</span><h2 id="moments-title">The world<br/><em>of VARNIYAM.</em></h2></div><a class="text-link" href="https://www.instagram.com/varniyam/" rel="noopener noreferrer" target="_blank">Follow @varniyam <span aria-hidden="true">↗</span></a></div><div class="moments-grid moments-curved-grid">
+<figure class="reveal moment-card moment-card-1"><div class="photo"><img alt="Silhouette studies editorial image of a woman in a sculptural white dress seen from the back" loading="lazy" src="assets/images/other/moment-silhouette-studies.webp"/></div><figcaption class="caption">01 / Silhouette studies</figcaption></figure><figure class="reveal moment-card moment-card-2"><div class="photo"><img alt="A closer look at silk-making threads and silkworm cocoons" loading="lazy" src="assets/images/other/moment-silk-making.webp"/></div><figcaption class="caption">02 / A closer look</figcaption></figure><figure class="reveal moment-card moment-card-3"><div class="photo"><img alt="The everyday muse in a dramatic black and white editorial portrait" loading="lazy" src="assets/images/other/moment-everyday-muse.webp"/></div><figcaption class="caption">03 / The everyday muse</figcaption></figure>
+</div><p class="note">Editorial inspirations. Original campaigns and behind-the-scenes moments will follow.</p></section>
+<section aria-labelledby="detail-title" class="detail section wrap"><div class="photo reveal"><img alt="Decorative beading across the back of a blue dress" height="700" loading="lazy" src="https://images.pexels.com/photos/10457695/pexels-photo-10457695.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" width="1000"/></div><div class="reveal"><span class="eyebrow">A closer look</span><h2 id="detail-title">Details <em>matter.</em></h2><p>The line of a neckline. The fall of a drape. A sleeve that changes the silhouette. Small details shape the way a look feels.</p><span class="eyebrow">Texture · Draping · Form</span></div></section>
+<section aria-labelledby="community-title" class="community section wrap"><span class="eyebrow">A new chapter is unfolding</span><h2 id="community-title">Enter the<br/><em>VARNIYAM world.</em></h2><p>Join our WhatsApp circle for collection stories, launches and special VARNIYAM updates.</p><form class="newsletter" id="newsletter"><label for="whatsapp-phone">Your WhatsApp number</label><div class="newsletter-row"><input aria-describedby="newsletter-note newsletter-status" autocomplete="tel" id="whatsapp-phone" inputmode="tel" maxlength="24" placeholder="+91 98765 43210" required="" type="tel"/><button type="submit">JOIN <span aria-hidden="true">↗</span></button></div><label class="whatsapp-consent"><input id="whatsapp-consent" required="" type="checkbox"/><span>I agree to receive VARNIYAM collection updates and offers on WhatsApp. I can opt out at any time.</span></label><p class="note" id="newsletter-note">Include your country code. Your number is saved securely in VARNIYAM's Supabase list after you press JOIN.</p><p class="form-status" id="newsletter-status" role="status"></p></form><noscript><p class="note">JavaScript is required to join WhatsApp updates. You can also follow <a href="https://www.instagram.com/varniyam/">@varniyam</a>.</p></noscript></section>
+<section aria-labelledby="contact-title" class="contact section" id="contact"><div class="wrap contact-inner"><div><span class="eyebrow">Start a conversation</span><h2 id="contact-title">Let’s create<br/><em>your look.</em></h2></div><div aria-label="VARNIYAM social contact platforms" class="contact-socials">
+<div class="social-float whatsapp"><a aria-label="Open VARNIYAM on WhatsApp" class="social-logo whatsapp-logo" href="https://wa.me/919363352518" rel="noopener noreferrer" target="_blank" title="WhatsApp">
+<svg aria-hidden="true" viewbox="0 0 64 64"><path d="M32 8C19.1 8 8.6 18.2 8.6 30.8c0 4.2 1.2 8.3 3.4 11.8L8 56l13.8-3.6c3.2 1.7 6.7 2.6 10.2 2.6 12.9 0 23.4-10.2 23.4-22.8S44.9 8 32 8Zm0 42.9c-3.2 0-6.3-.9-9-2.6l-.9-.5-8.2 2.1 2.2-7.9-.6-.9a19 19 0 0 1-3-10.3C12.5 20.4 21.2 12 32 12s19.5 8.4 19.5 18.8S42.8 50.9 32 50.9Z" fill="#fff"></path><path d="M42.7 36.3c-.6-.3-3.6-1.8-4.1-2-.6-.2-1-.3-1.4.3-.4.6-1.6 2-2 2.4-.4.4-.7.5-1.3.2-3.5-1.7-5.8-3.1-8.1-7-.6-1 .6-.9 1.7-3 .2-.4.1-.8-.1-1.1-.2-.3-1.4-3.3-1.9-4.5-.5-1.2-1-1-1.4-1h-1.2c-.4 0-1.1.2-1.7.8-.6.6-2.2 2.1-2.2 5.1s2.2 5.9 2.5 6.3c.3.4 4.3 6.6 10.5 9.2 3.9 1.7 5.4 1.8 7.3 1.5 1.2-.2 3.6-1.5 4.1-2.9.5-1.4.5-2.6.4-2.9-.2-.4-.6-.5-1.1-.8Z" fill="#fff"></path></svg>
+</a></div>
+<div class="social-float gmail"><a aria-label="Email VARNIYAM" class="social-logo gmail-logo" href="mailto:Varniyam.ramya@gmail.com" title="Email">
+<svg aria-hidden="true" viewbox="0 0 64 64"><path d="M10 18v31h10V28.2L10 18Z" fill="#4285F4"></path><path d="M44 28.2V49h10V18L44 28.2Z" fill="#34A853"></path><path d="M10 18l22 17 22-17v-3.5c0-3-3.5-4.7-5.9-2.8L32 24.2 15.9 11.7C13.5 9.8 10 11.5 10 14.5V18Z" fill="#EA4335"></path><path d="M44 28.2 54 18v-3.5c0-3-3.5-4.7-5.9-2.8L44 14.9v13.3Z" fill="#FBBC04"></path><path d="m10 18 10 10.2V14.9l-4.1-3.2C13.5 9.8 10 11.5 10 14.5V18Z" fill="#C5221F"></path></svg>
+</a></div>
+<div class="social-float instagram"><a aria-label="Open VARNIYAM on Instagram" class="social-logo instagram-logo" href="https://www.instagram.com/varniyam?stkn=MWloYWVyOWsxcjRzcQ==" rel="noopener noreferrer" target="_blank" title="Instagram">
+<svg aria-hidden="true" viewbox="0 0 64 64"><rect fill="none" height="34" rx="10" ry="10" stroke="#fff" stroke-width="5" width="34" x="15" y="15"></rect><circle cx="32" cy="32" fill="none" r="8.5" stroke="#fff" stroke-width="5"></circle><circle cx="43.5" cy="20.5" fill="#fff" r="3.3"></circle></svg>
+</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-main"><div class="footer-brand"><a class="logo" href="#home">VARNIYAM</a><p>ONE WOMAN. MANY MOODS.</p></div><nav aria-label="Footer navigation" class="footer-links"><span class="eyebrow">Explore</span><a href="#home">Home</a><a href="#wardrobe">Wardrobe</a><a href="#story">Our Story</a><a href="#customization">Customization</a><a href="#contact">Contact</a></nav><div class="policies"><span class="eyebrow">Information</span><p>Policies coming soon</p><details><summary>Shipping</summary><p>Shipping information has not been published. Please contact VARNIYAM with your enquiry.</p></details><details><summary>Returns</summary><p>A returns policy has not been published. Please discuss terms with VARNIYAM before placing an order.</p></details><details><summary>Privacy Policy</summary><p>The full privacy policy is coming soon. If you join WhatsApp updates, the phone number and consent you provide are saved in Supabase so VARNIYAM can manage your subscription and messaging preferences. The community review form sends the name, review text, and selected photos you choose to Supabase so VARNIYAM can moderate them and, after approval, display them publicly. Editorial images load from Pexels; Instagram and WhatsApp links take you to those services.</p></details><details><summary>Terms</summary><p>Terms are coming soon. This website is a brand portfolio. Editorial images are inspiration and do not confirm product availability.</p></details></div></div><div class="footer-bottom"><span>© 2026 VARNIYAM. All rights reserved.</span><span>Indian soul. Contemporary form.</span><a href="#home">Back to top ↑</a></div><details class="image-credits"><summary>Editorial image credits</summary><p>Independent editorial photography, used as style inspiration. Photographs by <a href="https://www.pexels.com/photo/elegant-woman-in-traditional-saree-indoors-32597575/" rel="noopener noreferrer" target="_blank">Rehman Alee</a>, <a href="https://www.pexels.com/photo/girl-in-a-green-dress-7273705/" rel="noopener noreferrer" target="_blank">Alejandro Peralta</a>, <a href="https://www.pexels.com/photo/stylish-woman-in-cozy-beige-loungewear-30698041/" rel="noopener noreferrer" target="_blank">Sara Kazemi</a>, <a href="https://www.pexels.com/photo/a-woman-wearing-a-white-dress-at-the-beach-8112481/" rel="noopener noreferrer" target="_blank">Rachel Claire</a>, <a href="https://www.pexels.com/photo/satin-dress-with-beads-10457695/" rel="noopener noreferrer" target="_blank">Ekaterina</a>. Used under the <a href="https://www.pexels.com/license/" rel="noopener noreferrer" target="_blank">Pexels license</a>. Gown photograph by <a href="https://www.pexels.com/photo/elegant-woman-in-black-evening-gown-posing-33365174/" rel="noopener noreferrer" target="_blank">Ivan Aguilar</a>, also under the Pexels license. No endorsement or affiliation is implied.</p></details></div></footer>
+<a aria-label="Back to top" class="top" href="#home"><img alt="" aria-hidden="true" src="assets/icons/back-to-top-icon.webp"/></a>
+<script src="js/main.js"></script>
+<script src="js/hero.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/reviews.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/collections.js"></script>
+
+
+</body>
+</html>

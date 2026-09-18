@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#f5f2eb"/>
+<title>After Hours — VARNIYAM</title>
+<meta name="description" content="Explore the After Hours collection from VARNIYAM. Published pieces are loaded directly from the VARNIYAM Supabase catalogue."/>
+<meta property="og:title" content="After Hours — VARNIYAM"/>
+<meta property="og:description" content="Romantic, expressive and made for evenings that feel like you. Discover date-night dresses, evening silhouettes and pieces with a little more drama."/>
+<meta property="og:type" content="website"/>
+<link href="assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="collection-page" data-collection-page="after-hours">
+
+<a class="skip" href="#main">Skip to content</a>
+<div aria-label="Welcome to VARNIYAM" aria-modal="true" class="entry-gate" id="entry-gate" role="dialog">
+<div class="entry-shell">
+<section aria-label="VARNIYAM brand" class="entry-brand-panel">
+<div class="entry-brand-inner">
+<img alt="VARNIYAM emblem" class="entry-brand-logo" id="entry-brand-logo"/>
+<div class="entry-brand-name">VARNIYAM</div>
+<div class="entry-brand-tagline">Style lives within you</div>
+<span aria-hidden="true" class="entry-brand-line"></span>
+</div>
+<div class="entry-brand-bottom">Fashion   ·   Women   ·   Life   ·   Many moods</div>
+</section>
+<section class="entry-welcome-panel">
+<button aria-label="Close account panel" class="entry-close" hidden="" id="entry-close" type="button">×</button>
+<div aria-hidden="true" class="entry-editorial">
+<figure class="entry-photo one"><img alt="" src="assets/images/login/login-saree-lotus.webp"/></figure>
+<figure class="entry-photo two"><img alt="" src="assets/images/login/login-white-saree.webp"/></figure>
+<figure class="entry-photo three"><img alt="" src="assets/images/login/login-city-scarf.webp"/></figure>
+<div class="entry-editorial-copy">Grace<br/>in every<br/>chapter</div>
+</div>
+<div class="entry-content">
+<div class="entry-view" id="entry-home-view">
+<span class="entry-kicker">More than fashion · a fuller you</span>
+<h1><span>Welcome to</span>VARNIYAM</h1>
+<span aria-hidden="true" class="entry-rule"></span>
+<p class="entry-subtitle">One woman. Many moods.</p>
+<div class="entry-actions">
+<button class="entry-action primary" data-entry-view="signin" type="button">Sign In <span aria-hidden="true">→</span></button>
+<button class="entry-action" data-entry-view="signup" type="button">Create Account <span aria-hidden="true">→</span></button>
+<button class="entry-action" id="entry-guest" type="button">Continue as Guest <span aria-hidden="true">→</span></button>
+</div>
+<div aria-label="VARNIYAM membership benefits" class="entry-perks">
+<div class="entry-perk"><strong>⌁</strong>Timeless<br/>designs</div>
+<div class="entry-perk"><strong>♡</strong>Modern<br/>women</div>
+<div class="entry-perk"><strong>✦</strong>Your own<br/>story</div>
+</div>
+</div>
+<form class="entry-view" hidden="" id="entry-signin-view" novalidate="">
+<button class="entry-link-button entry-back" data-entry-view="home" type="button">← Back</button>
+<h2 class="entry-form-heading">Welcome back.</h2>
+<p class="entry-form-copy">Sign in to your VARNIYAM account to share reviews and keep your member experience with you.</p>
+<div class="entry-field"><label for="entry-signin-email">Email</label><input autocomplete="email" id="entry-signin-email" placeholder="you@example.com" required="" type="email"/></div>
+<div class="entry-field"><label for="entry-signin-password">Password</label><input autocomplete="current-password" id="entry-signin-password" minlength="8" placeholder="Your password" required="" type="password"/></div>
+<button class="entry-action primary entry-submit" type="submit">Sign In <span aria-hidden="true">→</span></button>
+<div class="entry-form-row"><button class="entry-link-button" data-entry-view="reset" type="button">Forgot password?</button><button class="entry-link-button" data-entry-view="signup" type="button">Create an account</button></div>
+<p aria-live="polite" class="entry-auth-status" id="entry-signin-status" role="status"></p>
+</form>
+<form class="entry-view" hidden="" id="entry-signup-view" novalidate="">
+<button class="entry-link-button entry-back" data-entry-view="home" type="button">← Back</button>
+<h2 class="entry-form-heading">Become a member.</h2>
+<p class="entry-form-copy">Create your VARNIYAM account. We will send a verification email before your membership is fully activated.</p>
+<div class="entry-field"><label for="entry-signup-name">Your name</label><input autocomplete="name" id="entry-signup-name" maxlength="80" placeholder="Name" required="" type="text"/></div>
+<div class="entry-field"><label for="entry-signup-email">Email</label><input autocomplete="email" id="entry-signup-email" placeholder="you@example.com" required="" type="email"/></div>
+<div class="entry-field"><label for="entry-signup-password">Password</label><input autocomplete="new-password" id="entry-signup-password" minlength="8" placeholder="At least 8 characters" required="" type="password"/></div>
+<div class="entry-field"><label for="entry-signup-confirm">Confirm password</label><input autocomplete="new-password" id="entry-signup-confirm" minlength="8" placeholder="Repeat password" required="" type="password"/></div>
+<button class="entry-action primary entry-submit" type="submit">Create Account <span aria-hidden="true">→</span></button>
+<div class="entry-form-row"><span></span><button class="entry-link-button" data-entry-view="signin" type="button">Already a member? Sign in</button></div>
+<p aria-live="polite" class="entry-auth-status" id="entry-signup-status" role="status"></p>
+</form>
+<form class="entry-view" hidden="" id="entry-reset-view" novalidate="">
+<button class="entry-link-button entry-back" data-entry-view="signin" type="button">← Back to sign in</button>
+<h2 class="entry-form-heading">Reset password.</h2>
+<p class="entry-form-copy">Enter your account email and Supabase will send you a password-reset link.</p>
+<div class="entry-field"><label for="entry-reset-email">Email</label><input autocomplete="email" id="entry-reset-email" placeholder="you@example.com" required="" type="email"/></div>
+<button class="entry-action primary entry-submit" type="submit">Send reset link <span aria-hidden="true">→</span></button>
+<p aria-live="polite" class="entry-auth-status" id="entry-reset-status" role="status"></p>
+</form>
+<form class="entry-view" hidden="" id="entry-update-password-view" novalidate="">
+<h2 class="entry-form-heading">Choose a new password.</h2>
+<p class="entry-form-copy">Your reset link has been accepted. Set a new password for your VARNIYAM account.</p>
+<div class="entry-field"><label for="entry-new-password">New password</label><input autocomplete="new-password" id="entry-new-password" minlength="8" placeholder="At least 8 characters" required="" type="password"/></div>
+<button class="entry-action primary entry-submit" type="submit">Update password <span aria-hidden="true">→</span></button>
+<p aria-live="polite" class="entry-auth-status" id="entry-update-status" role="status"></p>
+</form>
+<div class="entry-view" hidden="" id="entry-account-view">
+<button class="entry-link-button entry-back" id="entry-account-back" type="button">← Enter website</button>
+<h2 class="entry-form-heading">My account.</h2>
+<p class="entry-form-copy">Your VARNIYAM membership is active on this device.</p>
+<div class="entry-account-card">
+<div class="entry-account-avatar" id="entry-account-avatar">V</div>
+<div class="entry-account-name" id="entry-account-name">VARNIYAM member</div>
+<div class="entry-account-email" id="entry-account-email"></div>
+<div class="entry-account-actions">
+<button class="entry-action primary" id="entry-account-enter" type="button">Enter VARNIYAM <span aria-hidden="true">→</span></button>
+<button class="entry-action" id="entry-logout" type="button">Log out</button>
+</div>
+</div>
+<p aria-live="polite" class="entry-auth-status" id="entry-account-status" role="status"></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+<header>
+<div class="header-inner wrap">
+<a aria-label="VARNIYAM home" class="logo header-brand" href="index.html#home">
+<img alt="" aria-hidden="true" class="header-brand-mark" src="assets/icons/varniyam-logo-mark.webp"/>
+<img alt="VARNIYAM" class="header-brand-wordmark" src="assets/icons/varniyam-wordmark.webp"/>
+</a>
+<button aria-controls="navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" type="button"><span></span><span></span></button>
+<nav aria-label="Main navigation" class="nav" id="navigation">
+<a href="index.html#home">Home</a><a href="index.html#wardrobe">Wardrobe</a><a href="index.html#story">Our Story</a><a href="index.html#philosophy">Philosophy</a><a href="index.html#customization">Customization</a><a href="index.html#contact">Contact</a><div class="nav-member" id="nav-member"><span class="nav-member-greeting" hidden="" id="nav-member-greeting"></span><button class="nav-account-button" id="account-button" type="button">Account</button><button class="nav-logout-button" hidden="" id="nav-logout-button" type="button">Log out</button></div>
+</nav>
+</div>
+</header>
+<div class="member-welcome-bar" hidden="" id="member-welcome-bar">
+<div class="member-welcome-inner wrap">Welcome back, <strong id="member-welcome-name">VARNIYAM member</strong><span aria-hidden="true">•</span><span>Your account is signed in.</span></div>
+</div>
+<main id="main" tabindex="-1">
+<section aria-labelledby="collection-gallery-title" class="collection-catalogue collection-page-catalogue section" id="collection-gallery">
+  <div class="collection-catalogue-shell">
+    <div class="collection-catalogue-head">
+      <div class="collection-catalogue-title-wrap">
+        <span class="eyebrow" id="collection-gallery-eyebrow">Wardrobe / After Hours</span>
+        <h1 class="collection-catalogue-title" id="collection-gallery-title">After Hours</h1>
+        <p class="collection-catalogue-intro" id="collection-gallery-intro">Romantic, expressive and made for evenings that feel like you. Discover date-night dresses, evening silhouettes and pieces with a little more drama.</p>
+      </div>
+      <a aria-label="Close wardrobe and return to the main Wardrobe section" class="button collection-back collection-close" href="index.html#wardrobe">Close wardrobe <span aria-hidden="true">×</span></a>
+    </div>
+    <nav aria-label="Browse VARNIYAM collections" class="collection-tabs" id="collection-tabs"><a class="collection-tab" href="indian-elegance.html">Indian Elegance</a><a class="collection-tab" href="modern-gowns.html">Modern Gowns</a><a class="collection-tab" href="everyday-feminine.html">Everyday Feminine</a><a class="collection-tab" href="getaway.html">Getaway</a><a class="collection-tab" href="after-hours.html" aria-current="page">After Hours</a></nav>
+    <div aria-live="polite" id="collection-status"></div>
+    <div class="collection-grid" id="collection-grid"></div>
+    <p class="collection-footer-note">Only pieces marked as published by VARNIYAM appear here. New products added in Supabase to this collection will appear on this page automatically.</p>
+  </div>
+</section>
+</main>
+<dialog aria-labelledby="product-dialog-title" class="collection-product-dialog" id="product-dialog">
+  <button aria-label="Close product details" class="product-dialog-close" id="product-dialog-close" type="button">×</button>
+  <div class="product-dialog-layout">
+    <div class="product-dialog-media">
+      <div class="product-dialog-main" id="product-dialog-main"></div>
+      <div aria-label="Product images" class="product-dialog-thumbs" id="product-dialog-thumbs"></div>
+    </div>
+    <div class="product-dialog-copy">
+      <span class="eyebrow" id="product-dialog-category">VARNIYAM</span>
+      <h2 id="product-dialog-title">Piece</h2>
+      <p class="product-dialog-price" id="product-dialog-price"></p>
+      <p class="product-dialog-description" id="product-dialog-description"></p>
+      <a class="button solid product-dialog-enquire" href="index.html#contact" id="product-dialog-enquire">Enquire about this piece <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</dialog>
+<footer><div class="wrap"><div class="footer-main"><div class="footer-brand"><a class="logo" href="index.html#home">VARNIYAM</a><p>ONE WOMAN. MANY MOODS.</p></div><nav aria-label="Footer navigation" class="footer-links"><span class="eyebrow">Explore</span><a href="index.html#home">Home</a><a href="index.html#wardrobe">Wardrobe</a><a href="index.html#story">Our Story</a><a href="index.html#customization">Customization</a><a href="index.html#contact">Contact</a></nav><div class="policies"><span class="eyebrow">Information</span><p>Policies coming soon</p><details><summary>Shipping</summary><p>Shipping information has not been published. Please contact VARNIYAM with your enquiry.</p></details><details><summary>Returns</summary><p>A returns policy has not been published. Please discuss terms with VARNIYAM before placing an order.</p></details><details><summary>Privacy Policy</summary><p>The full privacy policy is coming soon. If you join WhatsApp updates, the phone number and consent you provide are saved in Supabase so VARNIYAM can manage your subscription and messaging preferences. The community review form sends the name, review text, and selected photos you choose to Supabase so VARNIYAM can moderate them and, after approval, display them publicly. Editorial images load from Pexels; Instagram and WhatsApp links take you to those services.</p></details><details><summary>Terms</summary><p>Terms are coming soon. This website is a brand portfolio. Editorial images are inspiration and do not confirm product availability.</p></details></div></div><div class="footer-bottom"><span>© 2026 VARNIYAM. All rights reserved.</span><span>Indian soul. Contemporary form.</span><a href="#main">Back to top ↑</a></div><details class="image-credits"><summary>Editorial image credits</summary><p>Independent editorial photography, used as style inspiration. Photographs by <a href="https://www.pexels.com/photo/elegant-woman-in-traditional-saree-indoors-32597575/" rel="noopener noreferrer" target="_blank">Rehman Alee</a>, <a href="https://www.pexels.com/photo/girl-in-a-green-dress-7273705/" rel="noopener noreferrer" target="_blank">Alejandro Peralta</a>, <a href="https://www.pexels.com/photo/stylish-woman-in-cozy-beige-loungewear-30698041/" rel="noopener noreferrer" target="_blank">Sara Kazemi</a>, <a href="https://www.pexels.com/photo/a-woman-wearing-a-white-dress-at-the-beach-8112481/" rel="noopener noreferrer" target="_blank">Rachel Claire</a>, <a href="https://www.pexels.com/photo/satin-dress-with-beads-10457695/" rel="noopener noreferrer" target="_blank">Ekaterina</a>. Used under the <a href="https://www.pexels.com/license/" rel="noopener noreferrer" target="_blank">Pexels license</a>. Gown photograph by <a href="https://www.pexels.com/photo/elegant-woman-in-black-evening-gown-posing-33365174/" rel="noopener noreferrer" target="_blank">Ivan Aguilar</a>, also under the Pexels license. No endorsement or affiliation is implied.</p></details></div></footer>
+<a aria-label="Back to top" class="top" href="#main"><img alt="" aria-hidden="true" src="assets/icons/back-to-top-icon.webp"/></a>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/collection-page.js"></script>
+<script src="js/products.js"></script>
+
+</body>
+</html>

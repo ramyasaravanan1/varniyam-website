@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": {
+    "homepage_old_catalogue_removed": true,
+    "homepage_does_not_load_products_js": true,
+    "five_collection_pages_exist": true,
+    "all_js_syntax_checked": true,
+    "single_supabase_client_initializer": true,
+    "all_local_references_resolve": true
+  },
+  "errors": [],
+  "notes": [
+    "Live Supabase catalogue/auth/storage behavior requires internet access and the live project. Headless browser smoke testing was not completed because the environment stalled on external network resources."
+  ]
+}
