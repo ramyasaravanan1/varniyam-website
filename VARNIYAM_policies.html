@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VARNIYAM shipping, returns, privacy and terms policies." />
+  <title>Policies | VARNIYAM</title>
+  <style>
+    :root {
+      --sand-50: #fbf7f0;
+      --sand-100: #f4eadc;
+      --sand-200: #ead8c1;
+      --sand-300: #d8bea0;
+      --sand-400: #c49a73;
+      --terracotta: #a75f46;
+      --brown: #3a281f;
+      --brown-soft: #6b5143;
+      --line: rgba(58, 40, 31, 0.14);
+      --card: rgba(255, 252, 247, 0.84);
+      --shadow: 0 18px 48px rgba(73, 47, 32, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--brown);
+      background:
+        radial-gradient(circle at top left, rgba(216,190,160,.44), transparent 33%),
+        linear-gradient(180deg, #f8efe3 0%, #f2e4d2 46%, #ead7c2 100%);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.78;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .16;
+      background-image:
+        linear-gradient(rgba(255,255,255,.34) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.22) 1px, transparent 1px);
+      background-size: 36px 36px;
+      mask-image: linear-gradient(to bottom, black, transparent 78%);
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(248, 239, 227, 0.90);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      width: min(1180px, calc(100% - 32px));
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      min-height: 72px;
+    }
+
+    .brand {
+      color: var(--brown);
+      text-decoration: none;
+      letter-spacing: .19em;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.03rem;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      color: var(--brown-soft);
+      text-decoration: none;
+      font-size: .78rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 9px 12px;
+      border-radius: 999px;
+      transition: .2s ease;
+    }
+
+    .nav-links a:hover {
+      background: rgba(167, 95, 70, .09);
+      color: var(--terracotta);
+    }
+
+    .hero {
+      width: min(1040px, calc(100% - 34px));
+      margin: 68px auto 34px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      font-size: .72rem;
+      font-weight: 650;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.7rem, 7vw, 5.8rem);
+      font-weight: 400;
+      letter-spacing: -.03em;
+      line-height: .98;
+    }
+
+    .hero p {
+      margin: 22px auto 0;
+      max-width: 720px;
+      color: var(--brown-soft);
+      font-size: 1.02rem;
+    }
+
+    .policy-index {
+      width: min(1040px, calc(100% - 34px));
+      margin: 34px auto 24px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .policy-index a {
+      display: block;
+      padding: 18px 16px;
+      background: rgba(255,252,247,.58);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      color: var(--brown);
+      text-decoration: none;
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+    }
+
+    .policy-index a:hover {
+      transform: translateY(-2px);
+      background: rgba(255,252,247,.9);
+      box-shadow: 0 10px 30px rgba(73,47,32,.08);
+    }
+
+    main {
+      width: min(1040px, calc(100% - 34px));
+      margin: 0 auto 70px;
+    }
+
+    .policy-card {
+      scroll-margin-top: 92px;
+      background: var(--card);
+      border: 1px solid rgba(58,40,31,.12);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: clamp(28px, 5vw, 62px);
+      margin: 28px 0;
+    }
+
+    .section-number {
+      display: inline-flex;
+      width: 42px;
+      height: 42px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid rgba(167,95,70,.34);
+      color: var(--terracotta);
+      font-family: Georgia, "Times New Roman", serif;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1.08;
+      margin: 0 0 28px;
+    }
+
+    h3 {
+      margin: 32px 0 10px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 600;
+      font-size: 1.12rem;
+      color: #4c3327;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: #5e483b;
+    }
+
+    ul {
+      margin: 10px 0 20px;
+      padding-left: 1.25rem;
+      color: #5e483b;
+    }
+
+    li { margin: 7px 0; }
+    strong { color: #3d2a21; }
+
+    .notice {
+      margin-top: 34px;
+      padding: 18px 20px;
+      border-left: 3px solid var(--terracotta);
+      background: rgba(167,95,70,.06);
+      border-radius: 0 14px 14px 0;
+      color: var(--brown-soft);
+    }
+
+    footer {
+      padding: 54px 18px 70px;
+      text-align: center;
+      color: var(--brown-soft);
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-brand {
+      font-family: Georgia, "Times New Roman", serif;
+      letter-spacing: .22em;
+      color: var(--brown);
+      font-size: 1.15rem;
+    }
+
+    .tagline {
+      margin: 10px 0 4px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      color: var(--terracotta);
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 11px 18px;
+      border: 1px solid rgba(58,40,31,.22);
+      border-radius: 999px;
+      color: var(--brown);
+      text-decoration: none;
+      font-size: .84rem;
+      transition: .2s ease;
+    }
+
+    .back-home:hover {
+      background: var(--brown);
+      color: #fffaf3;
+    }
+
+    @media (max-width: 820px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0 14px;
+      }
+      .nav-links { justify-content: flex-start; }
+      .policy-index { grid-template-columns: repeat(2, 1fr); }
+      .hero { margin-top: 48px; }
+    }
+
+    @media (max-width: 520px) {
+      .policy-index { grid-template-columns: 1fr; }
+      .nav-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+      }
+      .nav-links a {
+        text-align: center;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,.28);
+      }
+      .policy-card { border-radius: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav" aria-label="Policy navigation">
+      <a class="brand" href="index.html">VARNIYAM</a>
+      <div class="nav-links">
+        <a href="#shipping">Shipping</a>
+        <a href="#returns">Returns</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">VARNIYAM • Customer Care</p>
+    <h1>Our Policies</h1>
+    <p>Clear information about shipping, returns, privacy and the terms that apply when you shop or interact with VARNIYAM.</p>
+  </section>
+
+  <section class="policy-index" aria-label="Policy quick links">
+    <a href="#shipping">Shipping Policy</a>
+    <a href="#returns">Returns &amp; Exchanges</a>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms &amp; Conditions</a>
+  </section>
+
+  <main>
+    <section id="shipping" class="policy-card">
+      <div class="section-number">01</div>
+      <h2>Shipping Policy</h2>
+      
+<p>At VARNIYAM, every piece is prepared with care and attention to detail. Since our garments are stitched specifically after an order is confirmed, we require additional time to prepare your order.</p>
+
+<h3>Order Processing &amp; Stitching</h3>
+<p>Once your order is confirmed and payment is received, your garment will be prepared and stitched specifically for your order.</p>
+<p>Orders will generally be processed, stitched and prepared for dispatch within <strong>8–10 business days</strong> from the date of order confirmation.</p>
+<p>This 8–10 business day period is the order preparation and stitching time and does not include the courier delivery period.</p>
+
+<h3>Dispatch &amp; Delivery</h3>
+<p>Once your order has been completed and quality-checked, it will be dispatched through our delivery partner.</p>
+<p>After dispatch, delivery within India generally takes approximately <strong>3–7 business days</strong>, depending on your location and courier service.</p>
+<p>The overall delivery timeline may therefore generally be around <strong>11–17 business days</strong>, including stitching/processing and courier transit.</p>
+<p>Delivery timelines are estimates and may vary due to courier delays, public holidays, weather conditions, remote locations, incorrect address details or circumstances beyond VARNIYAM's control.</p>
+
+<h3>Order Confirmation</h3>
+<p>An order will be considered confirmed only after payment confirmation and acceptance of the order by VARNIYAM.</p>
+<p>Once an order is accepted, the stitching and preparation process will begin.</p>
+<p>As garments may be prepared specifically after an order is placed, cancellation or modification requests may not be possible once production has started.</p>
+
+<h3>Tracking</h3>
+<p>Once your order has been dispatched, tracking details will be shared through the contact information provided during the order process, where applicable.</p>
+
+<h3>Delays</h3>
+<p>In exceptional circumstances, additional time may be required for stitching, quality checking or dispatch. If there is a significant delay, VARNIYAM will communicate the same to the customer.</p>
+
+<h3>Incorrect Address / Unsuccessful Delivery</h3>
+<p>Customers are responsible for providing a complete and accurate delivery address and contact number.</p>
+<p>If an order is returned because of an incorrect address, incomplete address, customer unavailability or repeated delivery failure, additional shipping charges may apply for re-dispatch.</p>
+
+<h3>Damaged Package</h3>
+<p>If your package appears visibly damaged or tampered with at the time of delivery, please take photographs/videos of the package before opening it and contact VARNIYAM as soon as possible.</p>
+
+    </section>
+
+    <section id="returns" class="policy-card">
+      <div class="section-number">02</div>
+      <h2>Returns &amp; Exchanges Policy</h2>
+      
+<p>We want you to love your VARNIYAM piece. As our garments are prepared in limited quantities and may be stitched specifically after an order is placed, we follow a carefully defined return and exchange policy.</p>
+
+<h3>Eligibility</h3>
+<p>A return or exchange request may be considered for:</p>
+<ul>
+  <li>A product received in a damaged condition.</li>
+  <li>A manufacturing defect.</li>
+  <li>An incorrect product or size sent by VARNIYAM.</li>
+  <li>A product that is materially different from the confirmed order.</li>
+</ul>
+<p>Requests must be raised within <strong>48 hours of delivery</strong>.</p>
+
+<h3>Conditions</h3>
+<p>To be eligible for an exchange or return assessment:</p>
+<ul>
+  <li>The product must be unused and unworn.</li>
+  <li>Original tags and labels must remain attached.</li>
+  <li>The product must be returned in its original packaging.</li>
+  <li>The product must not have been washed, altered, stained or damaged.</li>
+  <li>The product must not have been exposed to perfume, deodorant or other substances.</li>
+  <li>Any accessories supplied with the product must also be returned.</li>
+</ul>
+<p>Products that do not meet these conditions may not be accepted.</p>
+
+<h3>Non-Returnable Items</h3>
+<p>The following may not be eligible for return or exchange:</p>
+<ul>
+  <li>Customised or personalised products.</li>
+  <li>Made-to-order pieces where stitching or production has already commenced.</li>
+  <li>Products purchased during clearance or final-sale promotions.</li>
+  <li>Products altered at the customer's request.</li>
+  <li>Products showing signs of wear, washing, damage or misuse.</li>
+  <li>Products returned after the applicable return period.</li>
+</ul>
+
+<h3>Size Exchanges</h3>
+<p>Please check the size guide carefully before placing your order.</p>
+<p>Size exchanges are subject to product availability. If the requested size is unavailable, VARNIYAM may offer an alternative solution depending on the circumstances.</p>
+
+<h3>Return Shipping</h3>
+<p>If the return is due to a confirmed manufacturing defect, incorrect product or error by VARNIYAM, return shipping may be arranged or reimbursed as applicable.</p>
+<p>For approved customer-requested exchanges, applicable shipping charges may be borne by the customer.</p>
+
+<h3>Refunds</h3>
+<p>Once the returned product is received and inspected, VARNIYAM will notify you regarding the approval or rejection of the return.</p>
+<p>Approved refunds will be processed through the applicable original payment method or another method communicated by VARNIYAM.</p>
+<p>Refund processing time may vary depending on the payment provider or bank.</p>
+
+<h3>Product Variations</h3>
+<p>Minor variations in colour, texture, print placement or appearance may occur due to photography, lighting, screen settings and the nature of individual fabrics. Such variations may not necessarily constitute a defect.</p>
+<p>Please contact VARNIYAM through our official communication channels before sending any product back.</p>
+
+    </section>
+
+    <section id="privacy" class="policy-card">
+      <div class="section-number">03</div>
+      <h2>Privacy Policy</h2>
+      
+<p>At VARNIYAM, we respect your privacy and are committed to handling your personal information responsibly.</p>
+<p>This Privacy Policy explains how VARNIYAM may collect, use and protect information provided by visitors and customers.</p>
+
+<h3>Information We May Collect</h3>
+<p>Depending on how you interact with VARNIYAM, we may collect:</p>
+<ul>
+  <li>Name</li>
+  <li>Phone number</li>
+  <li>Email address</li>
+  <li>Delivery and billing address</li>
+  <li>Order details</li>
+  <li>Product preferences</li>
+  <li>Information voluntarily shared through WhatsApp, Instagram, email or our website</li>
+  <li>Payment-related information required to process an order</li>
+</ul>
+
+<h3>How We Use Your Information</h3>
+<p>Your information may be used to:</p>
+<ul>
+  <li>Process and fulfil orders.</li>
+  <li>Begin and manage the stitching and preparation of your order.</li>
+  <li>Communicate with you regarding your order or enquiry.</li>
+  <li>Arrange delivery.</li>
+  <li>Provide customer support.</li>
+  <li>Respond to WhatsApp, Instagram or website enquiries.</li>
+  <li>Improve our products, services and website experience.</li>
+  <li>Send updates, offers or brand communications where permitted.</li>
+  <li>Prevent fraudulent or unauthorised transactions.</li>
+</ul>
+
+<h3>Payment Information</h3>
+<p>VARNIYAM does not intentionally store complete card, UPI or banking credentials on its own systems.</p>
+<p>Payments may be processed through third-party payment providers, whose respective privacy policies and terms may apply.</p>
+
+<h3>Cookies</h3>
+<p>Our website may use cookies or similar technologies to improve website functionality, understand visitor behaviour and provide a smoother browsing experience.</p>
+<p>You may be able to manage cookie preferences through your browser or device settings.</p>
+
+<h3>Third-Party Services</h3>
+<p>We may use trusted third-party services such as payment gateways, delivery partners, website hosting providers, analytics services and communication platforms.</p>
+<p>Such providers may process information as necessary to provide their services, subject to their applicable policies.</p>
+
+<h3>Data Security</h3>
+<p>We take reasonable measures to protect personal information from unauthorised access, misuse, alteration or disclosure.</p>
+<p>However, no online transmission or storage system can be guaranteed to be completely secure.</p>
+
+<h3>Your Choices</h3>
+<p>You may contact VARNIYAM to request clarification regarding personal information associated with your interactions with us, subject to applicable law and reasonable verification requirements.</p>
+
+<h3>Policy Updates</h3>
+<p>VARNIYAM may update this Privacy Policy from time to time to reflect changes in our business, website or applicable requirements.</p>
+<p>The updated version will be published on this page.</p>
+
+    </section>
+
+    <section id="terms" class="policy-card">
+      <div class="section-number">04</div>
+      <h2>Terms &amp; Conditions</h2>
+      
+<p>Welcome to VARNIYAM.</p>
+<p>By accessing our website, communicating with us or placing an order, you agree to the following Terms &amp; Conditions.</p>
+
+<h3>About VARNIYAM</h3>
+<p>VARNIYAM is a women's fashion label founded in 2026, offering Indian-inspired and contemporary women's clothing and related fashion products.</p>
+
+<h3>Product Information</h3>
+<p>We make reasonable efforts to ensure that product descriptions, photographs, colours, measurements and other information displayed on our website are accurate.</p>
+<p>Actual colours may vary slightly depending on lighting, photography and individual screen settings.</p>
+<p>Fabric characteristics, texture, embroidery, print placement and other details may also have natural variations.</p>
+
+<h3>Made-to-Order &amp; Stitching</h3>
+<p>Many VARNIYAM garments are stitched after an order is confirmed.</p>
+<p>Once an order is accepted and production begins, cancellation or modification may not be possible.</p>
+<p>The standard preparation and stitching period is <strong>8–10 business days</strong>, after which the order will be dispatched.</p>
+
+<h3>Pricing</h3>
+<p>All prices displayed by VARNIYAM are subject to change without prior notice.</p>
+<p>The applicable price at the time the order is confirmed will apply.</p>
+<p>Promotional offers, discounts and special pricing are subject to their stated terms and validity.</p>
+
+<h3>Orders</h3>
+<p>An order is considered confirmed only after payment confirmation and acceptance by VARNIYAM.</p>
+<p>VARNIYAM reserves the right to cancel or decline an order in circumstances including product unavailability, pricing or listing errors, suspected fraudulent activity or other legitimate operational reasons.</p>
+<p>If an order is cancelled after payment, any eligible refund will be processed accordingly.</p>
+
+<h3>Product Availability</h3>
+<p>VARNIYAM may produce or source products in limited quantities.</p>
+<p>A product shown on the website may become unavailable without prior notice.</p>
+
+<h3>Intellectual Property</h3>
+<p>All VARNIYAM brand names, logos, photographs, graphics, product descriptions, website content, designs and other original materials are owned by or licensed to VARNIYAM unless otherwise stated.</p>
+<p>They may not be copied, reproduced, modified, distributed or commercially used without prior written permission.</p>
+
+<h3>Customer Content</h3>
+<p>If you voluntarily share photographs, reviews, testimonials or other content with VARNIYAM, you grant VARNIYAM permission to use such content for legitimate brand, website and marketing purposes, subject to applicable law and any permissions separately communicated to you.</p>
+
+<h3>Website Use</h3>
+<p>You agree not to misuse the VARNIYAM website, attempt unauthorised access, interfere with website functionality, introduce malicious software or use website content for unlawful purposes.</p>
+
+<h3>Third-Party Links</h3>
+<p>Our website may contain links to third-party websites or platforms.</p>
+<p>VARNIYAM is not responsible for the content, privacy practices, availability or policies of third-party websites.</p>
+
+<h3>Delays &amp; Circumstances Beyond Our Control</h3>
+<p>VARNIYAM shall not be responsible for delays caused by circumstances beyond our reasonable control, including courier disruptions, natural events, technical failures, public restrictions or other unforeseen circumstances.</p>
+
+<h3>Governing Law</h3>
+<p>These Terms &amp; Conditions shall be governed by the applicable laws of India.</p>
+<p>Any disputes shall be subject to the jurisdiction of the appropriate courts having jurisdiction over VARNIYAM's place of business, subject to applicable law.</p>
+
+<h3>Changes to These Terms</h3>
+<p>VARNIYAM may update these Terms &amp; Conditions from time to time. The latest version published on the website will apply to future interactions and orders.</p>
+
+      <div class="notice">These policies may be updated from time to time. The latest version published on this page will apply to future interactions and orders.</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">VARNIYAM</div>
+    <div class="tagline">One Woman. Many Moods.</div>
+    <div>Indian soul. Contemporary form.</div>
+    <p style="margin-top:18px;">© 2026 VARNIYAM. All rights reserved.</p>
+    <a class="back-home" href="index.html">← Back to VARNIYAM</a>
+  </footer>
+</body>
+</html>
