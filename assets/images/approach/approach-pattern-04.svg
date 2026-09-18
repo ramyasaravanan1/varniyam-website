@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 980">
+<defs><radialGradient id="bg"><stop stop-color="#a41a1d"/><stop offset="1" stop-color="#620b0f"/></radialGradient><filter id="n"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4" type="fractalNoise"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .08 0"/></filter></defs>
+<rect width="700" height="980" fill="url(#bg)"/><rect width="700" height="980" filter="url(#n)" opacity=".35"/>
+<g fill="none" stroke="#e4be67" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M60 75c75 0 110 12 145 48 42-46 87-64 145-64s103 18 145 64c35-36 70-48 145-48"/>
+<path d="M60 905c75 0 110-12 145-48 42 46 87 64 145 64s103-18 145-64c35 36 70 48 145 48"/>
+<path d="M60 75v830M640 75v830"/>
+<path d="M60 205c28 0 48 17 48 44s-20 44-48 44m580-88c-28 0-48 17-48 44s20 44 48 44M60 687c28 0 48 17 48 44s-20 44-48 44m580-88c-28 0-48 17-48 44s20 44 48 44"/>
+<path d="M210 74c15 22 38 33 69 31-19 14-28 34-28 60-17-18-37-27-60-27 13-18 20-40 19-64Zm280 0c-15 22-38 33-69 31 19 14 28 34 28 60 17-18 37-27 60-27-13-18-20-40-19-64ZM210 906c15-22 38-33 69-31-19-14-28-34-28-60-17 18-37 27-60 27 13 18 20 40 19 64Zm280 0c-15-22-38-33-69-31 19-14 28-34 28-60 17 18 37 27 60 27-13 18-20 40-19 64Z"/>
+<circle cx="60" cy="355" r="5" fill="#e4be67"/><circle cx="60" cy="625" r="5" fill="#e4be67"/><circle cx="640" cy="355" r="5" fill="#e4be67"/><circle cx="640" cy="625" r="5" fill="#e4be67"/>
+</g>
+</svg>
